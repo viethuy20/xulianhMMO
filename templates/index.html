@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TF JS example</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@3.9.0"></script>
+    <link rel="stylesheet" href="../static/frontend/styles.css">
+</head>
+<body>
+    <h1 class="title">Load model client</h1>
+    <main class="file-form">
+        <input type="file" id="file" multiple class="file-form__select-file">
+        <label for="file" class="file-form__select-file_label">Nhập ảnh</label>
+        <div class="file-form__preview" id="previewimg"></div>
+        <span id="numberOfFiles"></span>
+        <div class="button">
+            <button type="button" class="file-form__button file-form__button_predict" id="predict">Dự đoán</button>
+            <button type="button" class="file-form__button file-form__button_clear" id="clear">Xóa</button>
+        </div>
+        
+    </main>
+    <div id="preview"></div>
+    <script src="../static/frontend/main.js"></script>
+</body>
+</html>
